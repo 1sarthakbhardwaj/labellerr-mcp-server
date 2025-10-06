@@ -582,9 +582,11 @@ labellerr-mcp-server/
 │   ├── labellerr-client.js # Labellerr API client
 │   └── tools/
 │       └── index.js        # Tool definitions
-├── package.json
-├── .env.example
-└── README.md
+├── package.json            # Dependencies and scripts
+├── .env.example           # Environment template
+├── claude_desktop_config.json # Claude configuration
+├── LICENSE                # MIT License
+└── README.md              # Documentation
 ```
 
 ### Adding New Tools
@@ -595,39 +597,18 @@ labellerr-mcp-server/
 
 ## Testing & Validation
 
-The MCP server includes comprehensive testing tools:
-
-### Quick Test
+### Testing the Server
 ```bash
-npm test
-# or
-node test-server.js
+# Start the server
+npm start
+
+# In another terminal, test MCP protocol
+echo '{"jsonrpc":"2.0","method":"tools/list","id":1}' | node src/index.js
 ```
 
-### Comprehensive Functionality Test
-```bash
-node test-functionality.js
-```
-Tests all 22 tools, error handling, and MCP protocol compliance.
-
-### Detailed Tool Analysis
-```bash
-node test-tools-detailed.js
-```
-Provides detailed analysis of all tool schemas and functionality.
-
-### Integration Validation
-```bash
-node validate-integration.js
-```
-Validates Claude Desktop integration readiness.
-
-### Test Results Summary
-✅ **22/22 tools** available and functional  
-✅ **5 tool categories** (Project, Dataset, Annotation, Monitoring, Query)  
+### Verification
+✅ **22 tools** available across 5 categories  
 ✅ **MCP protocol compliance** - 100% compatible  
-✅ **Error handling** - Proper error codes and messages  
-✅ **Resource access** - Projects, datasets, and history  
 ✅ **Claude Desktop ready** - Full integration support  
 
 ## Troubleshooting
