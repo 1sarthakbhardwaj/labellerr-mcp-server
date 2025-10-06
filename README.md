@@ -1,6 +1,11 @@
 # Labellerr MCP Server
 
-A Model Context Protocol (MCP) server that provides a comprehensive interface to the Labellerr SDK for managing annotation projects, datasets, and monitoring operations.
+[![GitHub release](https://img.shields.io/github/release/1sarthakbhardwaj/labellerr-mcp-server.svg)](https://github.com/1sarthakbhardwaj/labellerr-mcp-server/releases)
+[![GitHub license](https://img.shields.io/github/license/1sarthakbhardwaj/labellerr-mcp-server.svg)](https://github.com/1sarthakbhardwaj/labellerr-mcp-server/blob/main/LICENSE)
+[![Node.js CI](https://github.com/1sarthakbhardwaj/labellerr-mcp-server/actions/workflows/test.yml/badge.svg)](https://github.com/1sarthakbhardwaj/labellerr-mcp-server/actions/workflows/test.yml)
+[![MCP Protocol](https://img.shields.io/badge/MCP-Protocol-blue)](https://modelcontextprotocol.io)
+
+A Model Context Protocol (MCP) server that provides a comprehensive interface to the Labellerr SDK for managing annotation projects, datasets, and monitoring operations through natural language with Claude Desktop.
 
 ## Features
 
@@ -38,7 +43,7 @@ A Model Context Protocol (MCP) server that provides a comprehensive interface to
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/1sarthakbhardwaj/labellerr-mcp-server.git
 cd labellerr-mcp-server
 ```
 
