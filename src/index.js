@@ -505,3 +505,5 @@ class LabellerrMCPServer {
 // Start the server
 const server = new LabellerrMCPServer();
 server.run().catch(console.error);
+
+
