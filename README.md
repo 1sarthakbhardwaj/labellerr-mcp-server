@@ -161,6 +161,23 @@ Once configured with Claude Desktop or Cursor, you can interact naturally:
 - "Check status of export ABC123"
 - "Download completed export"
 
+## Current Status
+
+### ✅ Fully Working (21 tools)
+- Project Management: List, get details, update rotation
+- Dataset Management: Create, upload, list, query
+- Annotation Operations: Upload pre-annotations, export, download
+- Monitoring: Job status, progress, system health
+- Query & Search: Statistics, history, search
+
+### ⚠️ In Progress (1 tool)
+- **Project Creation** - Implementation complete but encountering API 400 error during dataset creation
+  - File upload to GCS: ✅ Implemented
+  - Dataset creation: ⚠️ Getting 400 error
+  - Template creation: ✅ Implemented
+  - Project finalization: ✅ Implemented
+  - See [Issue #1](https://github.com/1sarthakbhardwaj/labellerr-mcp-server/issues/1) for details
+
 ## Available Tools
 
 The server provides 22 specialized tools:
